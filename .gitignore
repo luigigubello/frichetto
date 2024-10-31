@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Windows Visual Studio 2022
+*.vs/
