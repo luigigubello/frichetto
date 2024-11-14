@@ -33,3 +33,4 @@
 
 # Windows Visual Studio 2022
 *.vs/
+!.vs/tasks.vs.json
