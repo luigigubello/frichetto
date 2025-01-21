@@ -6,15 +6,6 @@ using namespace std;
 
 int main()
 {
-    /*
-    vector<string> msg{ "Hello", "C++", "World", "from", "VS Code", "and the C++ extension!" };
-
-    for (const string& word : msg)
-    {
-        cout << word << " ";
-    }
-    cout << endl;
-    */
 
     int x;
     cout << "Type a number: ";
@@ -22,11 +13,33 @@ int main()
     // cout << "Your number is: " << x;
     for (int i = 1; i <= x; i++) // User input defines number of lines
     {
-        for (int j = 1; j <= i; j++) // We print a number of asterisks equal to the value of i
-        {
-            cout << "*";
+        if (i == 1 || i == x) // Print a line of x stars at the beginning and at the end
+        { 
+            for (int j = 1; j <= x; j++)
+            {
+                cout << "*";
+            }
+
+            cout << endl;
         }
-        cout << "\n";
+
+        else // Print a star for every 1 and i and print a space for every other value
+        { 
+            for (int j = 1; j <= x; j++)
+            {
+                if (j == 1 || j == x)
+                {
+                    cout << "*";
+                }
+
+                else
+                {
+                    cout << " "; // E INVECE DIO CANE NO
+                }
+
+            }
+
+            cout << endl;
+        }
     }
-    cout << endl;
 }
