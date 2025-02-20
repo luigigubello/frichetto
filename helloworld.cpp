@@ -9,7 +9,19 @@ int main()
 
     int x;
     cout << "Type a number: ";
-    cin >> x;
+    try {
+        cin >> x;
+        if (x < 1)
+        {
+            throw 1;
+        }
+
+    }
+    catch (int e) {
+        cout << "Number needs to be bigger than 1";
+        exit(0);
+    }
+    cout << "hello";
     // cout << "Your number is: " << x;
     // for (int i = 1; i <= x; i++) // User input defines number of lines
     int i = 1;
